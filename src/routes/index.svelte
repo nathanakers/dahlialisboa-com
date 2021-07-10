@@ -103,7 +103,7 @@
         </li>
         {/each}
         <li>
-            <p>Address Here Please</p>
+            <p></p>
         </li>
     </ul>
 </footer>

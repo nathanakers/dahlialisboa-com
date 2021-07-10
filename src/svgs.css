@@ -10,9 +10,7 @@ svg * {
 button.booking svg .cls-1 {fill:#FFE18D;}
 button.booking svg:hover .cls-1 {fill:#fdd867;}
 
-.is-active-false svg:not(:hover),
-.icon-FB svg:not(:hover),
-.icon-IG svg:not(:hover) {opacity: 0.8;}
+.is-active-false svg:not(:hover) {opacity: 0.6;}
 
 .icon-FB svg {height: 75%; margin-top: 30%;}
 .icon-FB svg .cls-1 {fill:#6a8bbe;}
