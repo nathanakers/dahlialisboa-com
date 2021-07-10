@@ -1,0 +1,223 @@
+@import '@fontsource/fira-mono';
+
+:root {
+	font-family: Times, 'Times New Roman', serif;
+	--font-mono: 'Fira Mono', monospace;
+	--pure-white: #ffffff;
+	--bg-color: #f2ecc3;
+	--primary-color: #b9c6d2;
+	--secondary-color: #d0dde9;
+	--tertiary-color: #edf0f8;
+	--accent-color: #ff3e00;
+	--heading-color: rgba(0, 0, 0, 0.7);
+	--text-color: #444444;
+	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+iframe {
+	border: 0;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+nav, ul, li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+#svelte {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+header, footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header {
+	justify-content: flex-end;
+	z-index: 11;
+	top: 0;
+}
+
+header nav {
+	padding: 1rem;
+}
+
+header button {
+	height: 1.3rem;
+	margin-left: .5rem;
+}
+
+main {
+    background-image: url('graphic-main.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    top: 12vh;
+    height: 65vh;
+    min-height: 346px;
+    width: auto;
+/*    width: 43vh;
+    min-width: 232px;
+*/    margin: 0 auto;
+}
+
+button.booking {
+	position: absolute;
+	display: flex;
+	left: 87%;
+	top: 8%;
+    width: 100%;
+    max-width: 242px;
+    height: 44%;
+    max-height: 291px;
+}
+
+button.booking svg {
+	position: absolute;
+	z-index: 0;
+	height: 120%;
+	top: -10%;
+}
+button.booking div {
+	position: relative;
+	z-index: 1;
+	top: 40%;
+    font-size: 1.3rem;
+	text-align: left;
+	font-weight: 100;
+	pointer-events: none;
+	padding-left: 2%;
+}
+.booking-modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+.booking-modal.is-open-true {
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+}
+.modal-bg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.75);
+	z-index: 0;
+	transition: 200ms ease;
+}
+.iframe-wrap {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	margin: 0 auto;
+	min-height: 400px;
+	height: 60vh;
+	width: 320px;
+	padding: 1rem;
+	border-radius: 20px;
+	border: 1rem solid white;
+	background-color: #f8f8f8;
+	transition: 200ms ease 200ms;
+}
+
+footer {
+    bottom: 0;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+footer ul {
+	padding: 1rem;
+}
+
+footer p {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer li a {
+    display: flex;
+    height: 1.6rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+	button.booking {
+		position: fixed;
+		left: 67vw;
+		top: 17vh;
+	}
+	button.booking svg {
+		height: 100%;
+	}
+	button.booking div {
+		padding: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	main {
+
+	}
+	button.booking {
+		position: absolute;
+	}
+
+	button.booking svg {
+	}
+}

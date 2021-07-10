@@ -1,0 +1,44 @@
+/* SVG Shapes and Colors */
+svg {
+	width: auto;
+	height: 100%;
+}
+svg * {
+	transition: 200ms ease;
+}
+
+button.booking svg .cls-1 {fill:#FFE18D;}
+button.booking svg:hover .cls-1 {fill:#fdd867;}
+
+.is-active-false svg:not(:hover),
+.icon-FB svg:not(:hover),
+.icon-IG svg:not(:hover) {opacity: 0.8;}
+
+.icon-FB svg {height: 75%; margin-top: 30%;}
+.icon-FB svg .cls-1 {fill:#6a8bbe;}
+.icon-FB svg:hover .cls-1 {fill:#3D5C98;}
+
+.icon-IG svg .cls-1 {fill:#eb559d;}
+.icon-IG svg .cls-2 {fill:#a073af;}
+.icon-IG svg .cls-3 {fill:#f69859;}
+.icon-IG svg:hover .cls-1 {fill:#DB2B7D;}
+.icon-IG svg:hover .cls-2 {fill:#7B4798;}
+.icon-IG svg:hover .cls-3 {fill:#F38533;}
+
+.icon-PT svg .cls-1 {fill:#ED4A56;}
+.icon-PT svg .cls-2 {fill:#327F52;}
+.icon-PT svg .cls-3 {fill:#F3EA6E;}
+.icon-PT svg:hover .cls-1,
+.icon-PT.is-active-true .cls-1 {fill:#EB252E;}
+.icon-PT svg:hover .cls-2,
+.icon-PT.is-active-true .cls-2 {fill:#156737;}
+.icon-PT svg:hover .cls-3,
+.icon-PT.is-active-true .cls-3 {fill:#F2E942;}
+
+.icon-GB svg .cls-1 {fill:#404980;}
+.icon-GB svg .cls-2 {fill:#fff;}
+.icon-GB svg .cls-3 {fill:#e55266;}
+.icon-GB svg:hover .cls-1,
+.icon-GB.is-active-true .cls-1 {fill:#272d62;}
+.icon-GB svg:hover .cls-3,
+.icon-GB.is-active-true .cls-3 {fill:#c72336;}
