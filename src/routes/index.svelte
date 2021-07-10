@@ -89,7 +89,7 @@
 <div class="booking-modal is-open-{modalState}">
     <div class="modal-bg" on:click={() => toggleModal()}/>
     <div class="iframe-wrap">
-        <iframe src="https://module.lafourchette.com/{languages[current].bookingSrc}/module/699917-35b33" style="scrolling:yes"></iframe>
+        <iframe src="https://module.lafourchette.com/{languages[current].bookingSrc}/module/699917-35b33" class="booking-iframe"></iframe>
     </div>
 </div>
 

@@ -2,6 +2,7 @@
 
 :root {
 	font-family: Times, 'Times New Roman', serif;
+	font-size: 16px;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--bg-color: #f2ecc3;
@@ -87,31 +88,46 @@ header button {
 }
 
 main {
-    background-image: url('graphic-main.png');
+/*    background-image: url('graphic-main.png');
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-
-    position: relative;
+*/
+	position: fixed;
     display: flex;
     top: 12vh;
-    height: 65vh;
+    bottom: 18vh;
+    left: 22vw;
+    right: 22vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main img {
+	display: flex;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+    object-fit: contain;
     min-height: 346px;
-    width: auto;
-/*    width: 43vh;
+    max-height: 780px;
     min-width: 232px;
-*/    margin: 0 auto;
+    max-width: 520px;
 }
 
 button.booking {
 	position: absolute;
 	display: flex;
-	left: 87%;
+	left: calc(50% + 150px);
 	top: 8%;
-    width: 100%;
     max-width: 242px;
     height: 44%;
     max-height: 291px;
+    font-size: 1.3rem;
+	text-align: left;
+	font-weight: 100;
 }
 
 button.booking svg {
@@ -119,16 +135,13 @@ button.booking svg {
 	z-index: 0;
 	height: 120%;
 	top: -10%;
+	left: -2%;
 }
 button.booking div {
 	position: relative;
 	z-index: 1;
 	top: 40%;
-    font-size: 1.3rem;
-	text-align: left;
-	font-weight: 100;
 	pointer-events: none;
-	padding-left: 2%;
 }
 .booking-modal {
 	display: none;
@@ -162,14 +175,18 @@ button.booking div {
 	z-index: 1;
 	display: flex;
 	margin: 0 auto;
-	min-height: 400px;
-	height: 60vh;
+	height: 520px;
 	width: 320px;
 	padding: 1rem;
 	border-radius: 20px;
 	border: 1rem solid white;
 	background-color: #f8f8f8;
 	transition: 200ms ease 200ms;
+	top: -5%;
+}
+iframe.booking-iframe {
+	height: 520px;
+	width: 320px;
 }
 
 footer {
@@ -196,28 +213,67 @@ footer li a {
     margin-right: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
+	:root {
+		font-size: 15px;
+	}
+
 	button.booking {
 		position: fixed;
-		left: 67vw;
-		top: 17vh;
+		top: 13vw;
 	}
+
 	button.booking svg {
+		left: -30%;
+		top: 0;
 		height: 100%;
-	}
-	button.booking div {
-		padding: 0;
 	}
 }
 
-@media (max-width: 767px) {
-	main {
-
+@media (max-width: 600px) {
+	:root {
+		font-size: 13px;
 	}
+
+	main {
+		top: 10vh;
+	}
+
 	button.booking {
 		position: absolute;
+		top: 65%;
+		left: 75%;
+		height: 35%;
 	}
 
 	button.booking svg {
+		left: -30%;
+		top: 0;
+		height: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		font-size: 12px;
+	}
+
+	main {
+		top: 13vh;
+		bottom: auto;
+	}
+
+	button.booking {
+		position: fixed;
+		top: auto;
+		bottom: 18%;
+		height: 50vw;
+		left: 50%;
+	}
+
+	button.booking svg {
+		left: -7%;
+		top: 0;
+		height: 110%;
 	}
 }
