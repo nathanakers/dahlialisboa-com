@@ -1,1 +1,6 @@
-!.svelte-kit/
+.svelte-kit/:src/
+.svelte-kit/:static/
+.svelte-kit/:jsconfig.json
+.svelte-kit/:package-lock.json
+.svelte-kit/:package.json
+.svelte-kit/:svelte.config.js
