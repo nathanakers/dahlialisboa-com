@@ -4,9 +4,9 @@
 .svelte-kit/:package-lock.json
 .svelte-kit/:package.json
 .svelte-kit/:svelte.config.js
-/_svelte-site/.svelte-kit/:src/
-/_svelte-site/.svelte-kit/:static/
-/_svelte-site/.svelte-kit/:jsconfig.json
-/_svelte-site/.svelte-kit/:package-lock.json
-/_svelte-site/.svelte-kit/:package.json
-/_svelte-site/.svelte-kit/:svelte.config.js
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/src/
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/static/
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/jsconfig.json
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/package-lock.json
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/package.json
+_svelte-site/.svelte-kit/:_svelte-site/.svelte-kit/svelte.config.js
