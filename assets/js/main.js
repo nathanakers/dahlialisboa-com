@@ -5,7 +5,7 @@ const bookingSrcPart1 = 'https://module.lafourchette.com/',
 
 let languages = [
         {
-            id: 'PT',
+            id: 'pt',
             active: true,
             bookingSrc: 'pt_PT',
             translations: {
@@ -13,7 +13,7 @@ let languages = [
             }
         },
         {
-            id: 'GB',
+            id: 'gb',
             active: false,
             bookingSrc: 'en_GB',
             translations: {
