@@ -4,7 +4,6 @@
 .svelte-kit/:package-lock.json
 .svelte-kit/:package.json
 .svelte-kit/:svelte.config.js
-
 /_svelte-site/.svelte-kit/:src/
 /_svelte-site/.svelte-kit/:static/
 /_svelte-site/.svelte-kit/:jsconfig.json
