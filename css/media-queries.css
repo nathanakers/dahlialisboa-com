@@ -1,0 +1,64 @@
+@media (max-width: 767px) {
+    :root {
+        font-size: 15px;
+    }
+
+    button.booking {
+        position: fixed;
+        top: 13vw;
+    }
+
+    button.booking svg {
+        left: -30%;
+        top: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 13px;
+    }
+
+    main {
+        top: 10vh;
+    }
+
+    button.booking {
+        position: absolute;
+        top: 65%;
+        left: 75%;
+        height: 35%;
+    }
+
+    button.booking svg {
+        left: -30%;
+        top: 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px;
+    }
+
+    main {
+        top: 13vh;
+        bottom: auto;
+    }
+
+    button.booking {
+        position: fixed;
+        top: auto;
+        bottom: 18%;
+        height: 50vw;
+        left: 50%;
+    }
+
+    button.booking svg {
+        left: -7%;
+        top: 0;
+        height: 110%;
+    }
+}

@@ -1,0 +1,195 @@
+:root {
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #f2ecc3;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+iframe {
+    border: 0;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+nav, ul, li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#svelte {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header, footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header {
+    justify-content: flex-end;
+    z-index: 11;
+    top: 0;
+}
+
+header nav {
+    padding: 1rem;
+}
+
+header button {
+    height: 1.3rem;
+    margin-left: .5rem;
+}
+
+main {
+    position: fixed;
+    display: flex;
+    top: 12vh;
+    bottom: 18vh;
+    left: 22vw;
+    right: 22vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main img {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    min-height: 346px;
+    max-height: 780px;
+    min-width: 232px;
+    max-width: 520px;
+}
+
+button.booking {
+    position: absolute;
+    display: flex;
+    left: calc(50% + 150px);
+    top: 8%;
+    max-width: 242px;
+    height: 44%;
+    max-height: 291px;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 100;
+    z-index: 1;
+}
+
+button.booking svg {
+    position: absolute;
+    z-index: 0;
+    height: 120%;
+    top: -10%;
+    left: -2%;
+}
+button.booking div {
+    position: relative;
+    z-index: 1;
+    top: 40%;
+    pointer-events: none;
+}
+.booking-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.booking-modal.is-open {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 0;
+    transition: 200ms ease;
+}
+.iframe-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 0 auto;
+    height: 520px;
+    width: 320px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1rem solid white;
+    background-color: #f8f8f8;
+    transition: 200ms ease 200ms;
+    top: -5%;
+}
+iframe.booking-iframe {
+    height: 520px;
+    width: 320px;
+}
+
+footer {
+    bottom: 0;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+footer ul {
+    padding: 1rem;
+}
+
+footer p {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer li a {
+    display: flex;
+    height: 1.6rem;
+    margin-right: 1rem;
+}
