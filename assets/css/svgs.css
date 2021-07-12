@@ -1,0 +1,43 @@
+/* SVG Shapes and Colors */
+svg {
+	width: auto;
+	height: 100%;
+}
+svg * {
+	transition: 200ms ease;
+}
+
+/* FLAGS */
+header svg {opacity: 0.5;}
+header svg:hover,
+header .active svg {opacity: 1;}
+
+header .icon-PT svg .cls-1 {fill:#ED4A56;}
+header .icon-PT svg .cls-2 {fill:#327F52;}
+header .icon-PT svg .cls-3 {fill:#F3EA6E;}
+header .icon-GB svg .cls-1 {fill:#404980;}
+header .icon-GB svg .cls-2 {fill:#fff;}
+header .icon-GB svg .cls-3 {fill:#e55266;}
+
+/* SOCIAL */
+footer .icon-FB svg {height: 75%; margin-top: 30%;}
+footer .icon-FB svg .cls-1 {fill:#6a8bbe;}
+footer .icon-FB svg:hover .cls-1 {fill:#3D5C98;}
+
+footer .icon-IG svg .cls-1 {fill:#eb559d;}
+footer .icon-IG svg .cls-2 {fill:#a073af;}
+footer .icon-IG svg .cls-3 {fill:#f69859;}
+footer .icon-IG svg:hover .cls-1 {fill:#DB2B7D;}
+footer .icon-IG svg:hover .cls-2 {fill:#7B4798;}
+footer .icon-IG svg:hover .cls-3 {fill:#F38533;}
+
+/* FLOWER */
+main button svg {
+    position: absolute;
+    z-index: 0;
+    height: 120%;
+    top: -10%;
+    left: -2%;
+}
+main button svg .cls-1 {fill:#FFE18D;}
+main button svg:hover .cls-1 {fill:#fdd867;}
