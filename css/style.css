@@ -1,8 +1,12 @@
+ @font-face { font-family: Marion; src: url('./fonts/Marion.ttc'); }
+
 :root {
-    font-family: Times, 'Times New Roman', serif;
+    font-family: Marion, Times, 'Times New Roman', serif;
     font-size: 16px;
+    letter-spacing: 0.1em;
 }
 
+/* GENERIC */
 body {
     margin: 0;
     background-color: #f2ecc3;
@@ -23,33 +27,19 @@ button {
     outline: inherit;
 }
 
-iframe {
-    border: 0;
-}
-
 button:focus:not(:focus-visible) {
     outline: none;
 }
 
-nav, ul, li {
+ul, li {
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-}
-
-ul, li {
     list-style: none;
 }
 
-#svelte {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
+/* HEADER / FOOTER */
 header, footer {
     display: flex;
     position: fixed;
@@ -63,7 +53,10 @@ header {
     top: 0;
 }
 
-header nav {
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
     padding: 1rem;
 }
 
@@ -72,6 +65,31 @@ header button {
     margin-left: .5rem;
 }
 
+footer {
+    bottom: 0;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+footer ul {
+    padding: 1rem;
+}
+
+footer p {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer li a {
+    display: flex;
+    height: 1.6rem;
+    margin-right: 1rem;
+}
+
+/* MAIN IMG & BOOKING BUTTON */
 main {
     position: fixed;
     display: flex;
@@ -97,7 +115,7 @@ main img {
     max-width: 520px;
 }
 
-button.booking {
+main button {
     position: absolute;
     display: flex;
     left: calc(50% + 150px);
@@ -111,19 +129,22 @@ button.booking {
     z-index: 1;
 }
 
-button.booking svg {
+main button svg {
     position: absolute;
     z-index: 0;
     height: 120%;
     top: -10%;
     left: -2%;
 }
-button.booking div {
+main button div {
     position: relative;
     z-index: 1;
     top: 40%;
     pointer-events: none;
 }
+
+
+/* BOOKING MODAL */
 .booking-modal {
     display: none;
     position: absolute;
@@ -165,31 +186,8 @@ button.booking div {
     transition: 200ms ease 200ms;
     top: -5%;
 }
-iframe.booking-iframe {
+iframe {
     height: 520px;
     width: 320px;
-}
-
-footer {
-    bottom: 0;
-    justify-content: flex-start;
-    font-size: 14px;
-    line-height: 2em;
-}
-
-footer ul {
-    padding: 1rem;
-}
-
-footer p {
-    display: flex;
-    align-self: center;
-    margin: 0;
-    padding: 0;
-}
-
-footer li a {
-    display: flex;
-    height: 1.6rem;
-    margin-right: 1rem;
+    border: 0;
 }
