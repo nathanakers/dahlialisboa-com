@@ -1,64 +1,15 @@
-@media (max-width: 767px) {
-    :root {
-        font-size: 15px;
-    }
+@media (max-width: 767px) and (max-aspect-ratio: 12/10) {
 
-    button.booking {
-        position: fixed;
-        top: 13vw;
-    }
-
-    button.booking svg {
-        left: -30%;
-        top: 0;
-        height: 100%;
+    main button {
+        left: calc(30% + 25vw);
+        top: 62%;
+        max-width: 65%;
     }
 }
 
-@media (max-width: 600px) {
-    :root {
-        font-size: 13px;
-    }
-
-    main {
-        top: 10vh;
-    }
-
-    button.booking {
-        position: absolute;
-        top: 65%;
-        left: 75%;
-        height: 35%;
-    }
-
-    button.booking svg {
-        left: -30%;
-        top: 0;
-        height: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    :root {
-        font-size: 12px;
-    }
-
-    main {
-        top: 13vh;
-        bottom: auto;
-    }
-
-    button.booking {
-        position: fixed;
-        top: auto;
-        bottom: 18%;
-        height: 50vw;
-        left: 50%;
-    }
-
-    button.booking svg {
-        left: -7%;
-        top: 0;
-        height: 110%;
+@media (max-width: 767px) and (max-aspect-ratio: 1/2) {
+    main button {
+        left: min(45%, 30vh);
+        top: clamp(70%, calc(50% + 20vh), 110%);
     }
 }

@@ -2,7 +2,7 @@
 
 :root {
     font-family: Marion, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: clamp(12px, min(calc(5px + 2vh), calc(5px + 2vw)), 18px);
     letter-spacing: 0.1em;
 }
 
@@ -68,7 +68,7 @@ header button {
 footer {
     bottom: 0;
     justify-content: flex-start;
-    font-size: 14px;
+    font-size: 0.7rem;
     line-height: 2em;
 }
 
@@ -92,53 +92,44 @@ footer li a {
 /* MAIN IMG & BOOKING BUTTON */
 main {
     position: fixed;
-    display: flex;
-    top: 12vh;
-    bottom: 18vh;
-    left: 22vw;
-    right: 22vw;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: flex-start;
+    top: min(85vw, 50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 main img {
-    display: flex;
+    display: block;
     position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    min-height: 346px;
+    height: min(78vh, 130vw);
+    object-fit: scale-down;
     max-height: 780px;
-    min-width: 232px;
     max-width: 520px;
+    top: min(-1rem, -2vh);
+    left: 4%;
 }
 
 main button {
     position: absolute;
     display: flex;
-    left: calc(50% + 150px);
-    top: 8%;
-    max-width: 242px;
-    height: 44%;
-    max-height: 291px;
-    font-size: 1.3rem;
+    z-index: 1;
+    left: clamp(82%, calc(30% + 25vw), 110%);
+    top: clamp(-40%, calc(-40% + 25vw), 15%);
+    height: min(25vh, 291px);
+    font-size: 1.25rem;
     text-align: left;
     font-weight: 100;
-    z-index: 1;
+    align-items: center;
 }
 
 main button div {
     position: relative;
     z-index: 1;
-    top: 40%;
     pointer-events: none;
 }
 
 
 /* BOOKING MODAL */
-.booking-modal {
+section {
     display: none;
     position: absolute;
     top: 0;
@@ -148,7 +139,7 @@ main button div {
     overflow: hidden;
     z-index: -1;
 }
-.booking-modal.is-open {
+section.is-open {
     display: flex;
     align-items: center;
     z-index: 10;

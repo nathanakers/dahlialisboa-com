@@ -47,8 +47,8 @@ main button svg {
     position: absolute;
     z-index: 0;
     height: 120%;
-    top: -10%;
-    left: -2%;
+    max-width: 120%;
+    left: -4%;
 }
 main button svg .cls-1 {fill:#FFE18D;}
 main button svg:hover .cls-1 {fill:#fdd867;}
