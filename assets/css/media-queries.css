@@ -5,11 +5,32 @@
         top: 62%;
         max-width: 65%;
     }
+    .iframe-wrap {
+        transform: scale(0.95, 0.95);
+    }
 }
 
 @media (max-width: 767px) and (max-aspect-ratio: 1/2) {
     main button {
         left: min(45%, 30vh);
         top: clamp(70%, calc(50% + 20vh), 110%);
+    }
+}
+
+@media (max-width: 580px) {
+    .iframe-wrap {
+        transform: scale(0.825, 0.825);
+    }
+}
+
+@media (max-width: 420px) {
+    .iframe-wrap {
+        transform: scale(0.67, 0.67);
+    }
+}
+
+@media (max-width: 300px) {
+    .iframe-wrap {
+        transform: scale(0.5, 0.5);
     }
 }
